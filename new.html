@@ -1,0 +1,22 @@
+<div class="container">
+    <h1>Loan Application</h1>
+    <form (submit)="submitApplication()">
+      <label for="fullName">Full Name:</label>
+      <input type="text" id="fullName" name="fullName" required [(ngModel)]="fullName">
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required [(ngModel)]="email">
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required [(ngModel)]="phone">
+      
+      <label for="loanAmount">Loan Amount:</label>
+      <input type="number" id="loanAmount" name="loanAmount" required [(ngModel)]="loanAmount">
+      
+      <label for="loanPurpose">Loan Purpose:</label>
+      <textarea id="loanPurpose" name="loanPurpose" rows="4" required [(ngModel)]="loanPurpose"></textarea>
+      
+      <button type="submit">Submit Application</button>
+    </form>
+  </div>
+  
